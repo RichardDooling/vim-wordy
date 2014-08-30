@@ -28,7 +28,10 @@ if !exists('g:wordy#ring')
   let g:wordy#ring = [
     \ 'weak',
     \ ['being', 'passive-voice', ],
+    \ 'adverbs',
+    \ 'adjectives',
     \ 'business-jargon',
+    \ 'negative',
     \ 'weasel',
     \ 'puffery',
     \ ['problematic', 'redundant', ],

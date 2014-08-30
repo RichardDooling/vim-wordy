@@ -12,7 +12,8 @@
 
 * Pure Vimscript; no external services or libraries needed
 * Uses Vim’s native spell-check engine
-* Includes 16 dictionaries covering different types of word usage
+* Includes 19 dictionaries containing over 29,000 unique words, covering
+  different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
 * User-configurable ring of dictionaries
@@ -82,17 +83,20 @@ Define your own ring of dictionaries, overriding the default one in your
 `.vimrc`:
 
 ```
-let g:wordy#ring = [
-  \ 'weak',
-  \ ['being', 'passive-voice', ],
-  \ 'business-jargon',
-  \ 'weasel',
-  \ 'puffery',
-  \ ['problematic', 'redundant', ],
-  \ ['colloquial', 'idiomatic', 'similies', ],
-  \ 'art-jargon',
-  \ ['contractions', 'opinion', 'vague-time', 'said-synonyms', ],
-  \ ]
+  let g:wordy#ring = [
+    \ 'weak',
+    \ ['being', 'passive-voice', ],
+    \ 'adverbs',
+    \ 'adjectives',
+    \ 'business-jargon',
+    \ 'negative',
+    \ 'weasel',
+    \ 'puffery',
+    \ ['problematic', 'redundant', ],
+    \ ['colloquial', 'idiomatic', 'similies', ],
+    \ 'art-jargon',
+    \ ['contractions', 'opinion', 'vague-time', 'said-synonyms', ],
+    \ ]
 ```
 
 You can navigate the ring with the following commands:
